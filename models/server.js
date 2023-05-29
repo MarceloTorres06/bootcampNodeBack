@@ -9,7 +9,7 @@ class Server{
         this.port = process.env.PORT;
 
         this.authPath    = '/api/auth';
-        this.recipesPath = '/api/recipes';
+        this.recipesPath = '/api';
 
         this.conectarDB();
         this.middlewares();
