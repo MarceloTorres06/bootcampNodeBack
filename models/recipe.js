@@ -23,6 +23,10 @@ const RecipeSchema = Schema({
     },
     userEmail: {
         type: String,   
+    },
+    isFavorite: {
+        type: Boolean,   
+        default: false
     }
 });
 

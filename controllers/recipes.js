@@ -11,8 +11,8 @@ const storeRecipes = async (req = request, res = response) => {
         await Recipe.deleteMany({});
 
         recipes.forEach (async element => {
-            const { name,description,ingredients,imagePath } = element;
-            const recetaNueva = new Recipe({name,description,ingredients,imagePath});
+            const { name,description,ingredients,imagePath,isFavorite } = element;
+            const recetaNueva = new Recipe({name,description,ingredients,imagePath,isFavorite});
             await recetaNueva.save();
         });
 
